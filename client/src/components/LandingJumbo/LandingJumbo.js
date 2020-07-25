@@ -4,19 +4,37 @@ import React, { Component } from "react";
 class LandingJumbo extends Component {
     render() {
         return (
-            <div className="jumbotron mt-5 landingJumbo">
-                <div className='col-sm-8 mx-auto jumboText'>
-                    <h1 className='d-flex justify-content-center companyName'>
-                        <div className="sidebar-brand-icon rotate-n-15 mr-2">
-                            <i className="far fa-user-circle" />
-                        </div> 
-                        <div>TITLE</div>
-                    </h1>
-                    <h2 className='text-center companySlogan'>BEST SLOGAN HERE</h2>
+            <div classNameName="jumbotrons mt-5">
+                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="d-block w-100" src="https://i8.amplience.net/i/jpl/01-desktop-banner-top-53933a8737541d5782630325d2ae51d6?qlt=90&fmt=webp" alt="First slide" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://i8.amplience.net/i/jpl/01-desktop-banner-top-a37592d6a1dcd73e9aea94b1a70e6c8f?qlt=90&fmt=webp" alt="Second slide" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://i8.amplience.net/i/jpl/01-desktop-banner-top-a69c117c2d1707d2f6d01e76aa00287e?qlt=90&fmt=webp" alt="Third slide" />
+                        </div>
+                    </div>
+                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
                 </div>
+
             </div>
         );
-    } 
+    }
 }
 
 export default LandingJumbo;

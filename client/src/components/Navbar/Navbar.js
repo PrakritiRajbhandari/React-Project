@@ -26,13 +26,23 @@ class Navbar extends Component {
         const userLink = (
             <ul className='navbar-nav list-group list-group-horizontal'>
                 <li>
-                    <Link className='btn btn-sm active mr-1 mb-1' to='/'>
+                    <Link className=' nab-link mr-4 mb-1' to='/'>
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link className='btn btn-sm active mr-1 mb-1' to='/dashboard'>
+                    <Link className=' nab-link mr-4 mb-1' to='/dashboard'>
                         Dashboard
+                    </Link>
+                </li>
+                <li>
+                    <Link className=' nab-link mr-4 mb-1' to='/dashboard'>
+                        Cart
+                    </Link>
+                </li>
+                <li>
+                    <Link className=' nab-link mr-4 mb-1' to='/dashboard'>
+                        Wishlist
                     </Link>
                 </li>
                 <li>

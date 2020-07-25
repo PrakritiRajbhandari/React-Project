@@ -1,5 +1,5 @@
 .backgroundImg {
-    background-image: url(../../assets/images/landingpagebackgroundimg.jpg);
+    /*background-image: url(../../assets/images/landingpagebackgroundimg.jpg);*/
     background-size:     cover;                  
     background-repeat:   no-repeat;
     background-position: center center;
@@ -7,7 +7,7 @@
 
 .landingJumbo {
     width: 60%;
-    background-color: rgba(204, 204, 204, 0.6) !important;
+    background-color: #52556C !important;
 }
 
 .cardBackground{
@@ -50,4 +50,27 @@
 
 .googleLogo:hover {
     color: #dc5246 !important;
+}
+
+.heading2 h3{
+    text-align: center;
+}
+
+.nab-link{
+    color: #ffffff;
+}
+
+.nab-link:hover{
+    color: #001f3f;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #52556C ;
+    color: #ffffff;
+}
+
+.heading2 span{
+    color:red;
+    font-weight: bold;
 }
