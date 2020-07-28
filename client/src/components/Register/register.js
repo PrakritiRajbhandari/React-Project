@@ -31,7 +31,7 @@ class Register extends Component {
             formIsValid = false;
             errors["email"] = "Email is not valid";
         }
-        else {}
+        else { }
 
         // password
         if (!this.state.password) {
@@ -42,7 +42,7 @@ class Register extends Component {
             formIsValid = false;
             errors["password"] = "Password must be at least 6 characters";
         }
-        else {}
+        else { }
 
         // firstName
         if (!this.state.first_name) {
@@ -55,7 +55,7 @@ class Register extends Component {
                 errors["first_name"] = "Only letters";
             }
         }
-        else {}
+        else { }
 
         // lastName
         if (!this.state.last_name) {
@@ -66,7 +66,7 @@ class Register extends Component {
             formIsValid = false;
             errors["last_name"] = "Only letters";
         }
-        else {}
+        else { }
 
         this.setState({ errors: errors });
         return formIsValid;
@@ -119,7 +119,7 @@ class Register extends Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-6 mt-5 mx-auto'>
+                    <div className='col-md-12 mt-5 mx-auto'>
                         <form noValidate onSubmit={this.onSubmit}>
                             <h1 className='h3 mb-3 font-weight normal'>Please Sign in</h1>
                             <div className='form-group'>

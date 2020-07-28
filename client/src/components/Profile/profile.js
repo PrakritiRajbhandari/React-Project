@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import jwt_decode from 'jwt-decode';
 import { Link } from "react-router-dom";
-
+import Footer from '../Footer/Footer';
 
 class Profile extends Component {
     constructor() {
@@ -31,7 +31,10 @@ class Profile extends Component {
                 <div className="row">
                     <div className='col-md-12 text-center'>
                         <div className='col-sm-8 mx-auto '>
-                            <h1 className='text-center'>My Account</h1>
+
+                            <h1>
+                                Welcome {this.state.first_name} {this.state.last_name}
+                            </h1>
                         </div>
                         <table className='table col-md-6 mx-auto'>
                             <tbody>
@@ -59,6 +62,7 @@ class Profile extends Component {
                         </Link>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

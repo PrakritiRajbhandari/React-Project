@@ -335,7 +335,8 @@ li a {
 .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
-.image:hover .cart4 {
+.image:hover .cart4,
+.image:hover .cart5 {
   bottom: 120px;
   opacity: 1;
   padding: 10px;

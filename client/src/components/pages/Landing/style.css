@@ -1,5 +1,5 @@
 .backgroundImg {
-    background-image: url(../../assets/images/landingpagebackgroundimg.jpg);
+  margin-top: -48px;
     background-size:     cover;                  
     background-repeat:   no-repeat;
     background-position: center center;
@@ -50,4 +50,14 @@
 
 .googleLogo:hover {
     color: #dc5246 !important;
+}
+
+footer.footer.text-center.py-3 {
+    background: #52556c;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
