@@ -24,7 +24,8 @@ class Login extends Component {
         }
         loginUser(user).then(res => {
             if (res) {
-                this.props.history.push('/dashboard');
+                this.props.history.push('/');
+                window.location.reload();
             }
             else {
                 console.log("Incorrect email or password");
@@ -38,7 +39,7 @@ class Login extends Component {
                 <div className='row'>
                     <div className='col-md-6 mt-5 mx-auto'>
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className='h3 mb-3 font-weight normal'>Login</h1>
+                            <h1 className='h3 mb-3 font-weight normal'>Please Sign in</h1>
                             <div className='form-group'>
                                 <label htmlFor='email'>Email Address</label>
                                 <input type='email'

@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class LandingJumbo extends Component {
     render() {
         return (
-            <div classNameName="jumbotrons mt-5">
+            <div className="jumbotrons mt-5">
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>

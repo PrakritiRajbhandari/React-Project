@@ -18,30 +18,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+    app.use(express.static("client/build"));
 }
 
 // Bodyparser middleware
 app.use(bodyParser.json());
 app.use(cors());
 app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
+    bodyParser.urlencoded({
+        extended: false
+    })
 );
 
 app.use(express.static("public"));
 // DB Config
 const MONGODB_URI = ""
-const mongoURI = "mongodb://localhost/BenJODB";
+const mongoURI = "mongodb://localhost/login";
 
 // Connect to MongoDB
-mongoose.connect(MONGODB_URI || mongoURI, {
+mongoose.connect( MONGODB_URI || mongoURI, {
   useNewUrlParser: true,
   useFindAndModify: false
 })
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
+.then(() => console.log("MongoDB successfully connected"))
+.catch(err => console.log(err));
 
 // Passport middleware
 app.use(passport.initialize());
@@ -61,5 +61,5 @@ app.use((req, res, next) => {
 
 // Start the API server
 app.listen(PORT, function () {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });

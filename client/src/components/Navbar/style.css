@@ -34,3 +34,27 @@
     background-color: #777777;
     text-decoration: none;
 } */
+
+
+i.fas.fa-shopping-cart {
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+button#logoutBtn {
+    margin-left: 20px;
+}
+
+.heading2.text-center>span {
+    color: red;
+    font-weight: bold;
+}
+
+.navText{
+    color: #FFFFFF;
+}
+
+.navText:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}

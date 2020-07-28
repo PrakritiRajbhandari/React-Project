@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import "./style.css";
 import LandingJumbo from "../../LandingJumbo/LandingJumbo";
 import BrandDescription from "../../BrandDescription/BrandDescription"
-import Product from "../../Product/mens";
-import WomensProduct from "../../WomensProduct/Womens";
-import ChildrenProduct from "../../ChildrenProduct/Children";
 import Footer from "../../Footer/Footer";
+
 class Landing extends Component {
     render() {
         return (
@@ -14,9 +12,6 @@ class Landing extends Component {
                     <LandingJumbo />
                 </div>
                 <BrandDescription />
-                <Product />
-                <WomensProduct />
-                <ChildrenProduct />
                 <Footer />
             </div>
         );

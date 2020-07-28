@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import jwt_decode from 'jwt-decode';
-// import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar"
+import { Link } from "react-router-dom";
+
 
 class Profile extends Component {
     constructor() {
@@ -27,11 +27,11 @@ class Profile extends Component {
     render() {
         return (
             <div className='container-fluid pl-0 m-0'>
-                <Sidebar />
-                <div className="d-flex flex-row-reverse mt-5 mr-5">
-                    <div className='col-xs-12 col-sm-12 col-md-9 jumbotron jumbotron-fluid cardBackground'>
-                        <div className='col-sm-8 mx-auto'>
-                            <h1 className='text-center'>PROFILE</h1>
+
+                <div className="row">
+                    <div className='col-md-12 text-center'>
+                        <div className='col-sm-8 mx-auto '>
+                            <h1 className='text-center'>My Account</h1>
                         </div>
                         <table className='table col-md-6 mx-auto'>
                             <tbody>
@@ -49,6 +49,14 @@ class Profile extends Component {
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className='col-md-12 text-center'>
+                        <Link to="/">
+                            <a class="btn btn-sm active">Continue Shopping</a>
+                        </Link>
                     </div>
                 </div>
             </div>
