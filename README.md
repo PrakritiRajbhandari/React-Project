@@ -15,11 +15,6 @@ Follow [this link](https://frozen-brushlands-62997.herokuapp.com/) to view the a
 
 <img src="./images/desktop.PNG" alt="  desktop screenshot"/>
 
-### Mobile
-
-<img src="./assets/img/mobile.PNG" height="400" alt="  mobile screenshot"/>
-
-
 
 ## How to set up this repo:
 1. clone this repository
