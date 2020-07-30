@@ -1,15 +1,15 @@
 import axios from 'axios';
 
-//let serverUrl = "http://localhost:5001"
+let serverUrl = "http://localhost:5001"
 // (change serverUrl on heroku)
-// if (process.env.NODE_ENV === "production") {
-//     serverUrl = 'https://pure-wave-73002.herokuapp.com/';
-// }
+if (process.env.NODE_ENV === "production") {
+    serverUrl = 'https://frozen-brushlands-62997.herokuapp.com/';
+}
 
 export const registerUser = userData => {
     // console.log(userData);
     return axios
-        .post('/api/register', {
+        .post(serverUrl + '/api/register', {
             first_name: userData.first_name,
             last_name: userData.last_name,
             email: userData.email,
@@ -23,7 +23,7 @@ export const registerUser = userData => {
 export const loginUser = userData => {
     // console.log(userData);
     return axios
-        .post('/api/login', {
+        .post(serverUrl + '/api/login', {
             email: userData.email,
             password: userData.password
         })
@@ -38,7 +38,7 @@ export const loginUser = userData => {
 
 export const getUsers = userData => {
     return axios
-        .get('/api/displayusers', {
+        .get(serverUrl + '/api/displayusers', {
         })
         .then(response => {
             // console.log(response.data);
