@@ -22,6 +22,11 @@ function Navbar(props) {
     const loginRegLink = (
         <ul className='navbar-nav list-group list-group-horizontal'>
             <li>
+                <Link to="/cart">
+                    <i className="fas fa-shopping-cart" /><span>{props.basketProps.basketNumbers}</span>
+                </Link>
+            </li>
+            <li>
                 <Link className='btn btn-sm active mr-1 mb-1' to='/login'>
                     Login
                     </Link>
